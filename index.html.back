@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your page title</title>
+
+    <link rel="stylesheet" href="./stylesheet.css">  
+    
+</head>
+
+<body>
+  <div class="grid">
+    <script Language="JavaScript">
+    <!-- 
+    for(i = 0; i < 100;i++) {
+      for(j = 0; j < 100; j++){
+         document.write('<div id="'+i+'x'+j+'"></div>')
+      }      
+    }
+    //-->
+    </script>
+  </div>
+</body>
+</html>
+

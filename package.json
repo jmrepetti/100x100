@@ -1,0 +1,14 @@
+{
+    "name": "100x100"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "express": "x",
+      "jade": "x",
+      "socket.io" : "x",
+      "body-parser" :"x",
+      "method-override":"x",
+      "errorhandler":"x"
+  }
+}
+

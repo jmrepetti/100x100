@@ -1,0 +1,1 @@
+convert Troll-face.png -scale 100x100\! Troll-face.txt

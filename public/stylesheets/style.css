@@ -1,0 +1,17 @@
+body {
+    padding: 0;
+    
+}
+
+.grid {
+    width:700px;
+    margin-left:20%;
+    margin-right:20%;  
+}
+
+.grid div {
+    float: left;
+    background-color:black;
+    margin:0 1px 1px 0;
+    padding:3px;
+}
