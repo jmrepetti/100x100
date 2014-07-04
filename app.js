@@ -43,6 +43,32 @@ app.get('/', function(req, res){
   });
 });
 
+app.get('/:grid_id', function(req, res){
+  res.render('index', {
+    title: 'Grid'
+  });
+});
+
+app.get('/:x/:y/:rgb', function(req, res){
+  var x = req.params.x;
+  var y = req.params.y;
+  var rgb = req.params.rgb;
+  io.sockets.emit('update', {"x":x,"y":y,"rgb":rgb});
+  res.send(200);
+});
+
+app.get('/:grid_id/:x/:y/:rgb', function(req, res){
+  var x = req.params.x;
+  var y = req.params.y;
+  var rgb = req.params.rgb;
+
+  var nsp = io.of('/'+req.params.grid_id);
+  nsp.emit('update', {"x":x,"y":y,"rgb":rgb});
+
+  res.send(200);
+});
+
+
 app.get('/:x/:y/:rgb', function(req, res){
   var x = req.params.x;
   var y = req.params.y;

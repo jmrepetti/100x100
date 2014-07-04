@@ -1,6 +1,15 @@
 extends layout
 
 block mainContent
+  .usage
+    h1 Usage
+
+    p Hit the URL with a GET like this:
+    p do a GET http://unterdenlinden.biz:3001/public/:x/:y/:rbg 
+    P To change the color of the squeare in :x,:y to :rgb  
+
+    p Yes, is node running in port 3001. Be nice.
+     
   .grid
     -for(i = 0; i < 100;i++) {
       -for(j = 0; j < 100; j++){
