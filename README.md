@@ -19,4 +19,19 @@ Then from command line you can use [Siege](http://www.joedog.org/siege-home/) to
 
     $ siege -c 200 -f Troll-face-urls.txt
 
+### Example
+
+There's an example running on [http://unterdenlinden.biz:3001](http://unterdenlinden.biz:3001)
+
+You can create "personal" grids giving a name as parameter, for example, visit:
+
+ [http://unterdenlinden.biz:3001/personal-grid-i-want-to-share](http://unterdenlinden.biz:3001/personal-grid-i-want-to-share)
+
+and draw using this URL 
+
+    GET http://unterdenlinden.biz:3001/personal-grid-i-want-to-share/:x/:y/:rbg         
+
+The grid is not persistent, so share the link before start drawing :S. Next version I'll save grid status.
+
+**Yes, is node running on port 3001. Be nice.**
 
