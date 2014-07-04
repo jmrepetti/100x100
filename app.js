@@ -20,10 +20,15 @@ var io = socket.listen(server);
 
 
 // Configuration
+var logger = function(req, res, next) {
+    console.log("["+ new Date().toISOString() +" ] " + req.method + " " + req.url );
+    next(); // Passing the request to the next handler in the stack.
+}
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.set('log level', 1);
+app.use(logger)
 app.use(bodyParser());
 app.use(methodOverride());
 app.use(express.static(__dirname + '/public'));
